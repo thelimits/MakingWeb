@@ -1,0 +1,725 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serifS;
+}
+
+.bg
+{
+    width: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    /* background: url(asset/red-bull-campus-clutch-new-zealand.jpg); */
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.bg .bg-video
+{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0; right: 0; bottom: 0; left: 0;
+    object-position: 50% 50%;
+    object-fit: cover;
+}
+.bg .bg-video .videos
+{
+    height: 100%;
+    width: 100%;
+    top: 0; 
+    right: 0;
+    pointer-events: none;
+}
+@media (min-width: 1025px) 
+{
+    .bg .bg-video { height: 200%; top: -50%; }
+}
+@media (max-width: 1025px) 
+{
+    .bg .bg-video 
+    {   width: 182%;
+        left: -39%;
+        height: 195%;
+        top: -39%;
+    }
+}
+@media (max-width: 500px) 
+{
+    .bg .bg-video 
+    {   width: 280%;
+        left: -90%;
+        height: 280%;
+        top: -90%;
+    }
+}
+
+@media (max-width: 400px) 
+{
+    .bg .bg-video 
+    {   width: 325%;
+        left: -113%;
+        height: 325%;
+        top: -113%;
+    }
+}
+
+.form-login
+{
+    width: 380px;
+    height: 453px ;
+    position: relative;
+    margin: 2% auto;
+    background: rgba(0, 0, 0,.8);
+    padding: 5px;
+    transition: .5s;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+input
+{
+    color: #fff;
+}
+
+.form-login .back
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 40px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    transition: .5s;
+}
+
+.back:hover
+{
+    color:#FCF6BA ;
+}
+
+.button-box
+{
+    text-align: center;
+    width: 220px;
+    height: auto;
+    position: relative;
+    margin: 30px auto;
+    box-shadow: 0 0 20px 9px #FCF6BA;
+    border-radius: 30px;
+
+}
+.button-button
+{
+    color: white;
+    text-align: center;
+    margin-left: 4px ;
+    margin-right: 3px;
+    background: transparent;
+    width: auto;
+    height: auto;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#buttons
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient( to right ,#BF953F, #FCF6BA, #B38728);
+    border-radius: 30px;
+    transition: .55s all;
+}
+
+.input-form
+{
+    top: 130px;
+    width: 280px;
+    position: absolute;
+    height: 65%;
+    transition:  .5s;
+}
+ 
+#txtfirstname, #lastname , #email , #pass , #date ,
+#checkpass , #tel , #opt, #email1 , #pass1 ,#txtNationality
+{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    border-left: 0;
+    outline: none;
+    background: transparent;
+}
+.input-field
+{
+    height: 55px;
+    border: 0;
+}
+
+.check-box
+{
+    display:  inline-block;
+    width: auto;
+    height: auto;
+    margin: 23px 15px 23px 0;
+}
+
+span
+{
+    width: auto;
+    height: auto;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    margin: 23px 10px 23px 0;
+    font-size: 13px;
+}
+
+.submit-buttons
+{
+    width: 85%;
+    height: auto;
+    padding: 10px 30px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    background: #B38728;
+    outline: none;
+    border-radius: 20px;
+}
+
+.regis-buttons
+{
+    width: 85%;
+    height: auto;
+    padding: 10px 30px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    background: #B38728;
+    outline: none;
+    border-radius: 20px;
+}
+
+#Login
+{
+    left: 50px;
+}
+#Registered-form
+{
+    left: -450px;
+}
+
+#opt 
+{
+    width: 60px;
+}
+#tel
+{
+    
+    width: 215px;
+}
+
+.input-field i
+{
+    margin-top: 15px;
+    position: absolute;
+    visibility: hidden;
+}
+
+/* login */
+.input-field.success #email1
+{
+    border-bottom-color: lawngreen;
+}
+
+.input-field.errors #email1
+{
+    border-bottom-color: red;
+}
+
+#first1 
+{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 43px;
+}
+
+.input-field.errors small#first1
+{
+    visibility: visible;
+    color: red
+}
+
+.input-field.success i.fa-check-circle#email1
+{
+    visibility: visible;
+    color: lawngreen;
+    border: 0;
+}
+
+.input-field.errors i.fa-exclamation-circle#email1
+{
+    visibility: visible;
+    color: red;
+    border: 0;
+}
+/* password */
+.input-field.success #pass1
+{
+    border-bottom-color: lawngreen;
+}
+
+.input-field.errors #pass1
+{
+    border-bottom-color: red;
+}
+
+#second1
+{
+    height: auto;
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: calc(43px + 55px);
+}
+
+.input-field.errors small#second1
+{
+    visibility: visible;
+    color: red
+}
+
+.input-field.success i.fa-check-circle#pass1
+{
+    visibility: visible;
+    color: lawngreen;
+    border: 0;
+}
+
+.input-field.errors i.fa-exclamation-circle#pass1
+{
+    visibility: visible;
+    color: red;
+    border: 0;
+}
+
+
+/* Registered */
+/* first */
+.input-field.success #txtfirstname
+{
+    border-bottom-color: lawngreen;
+}
+
+.input-field.errors #txtfirstname
+{
+    border-bottom-color: red;
+}
+
+#first 
+{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 43px;
+}
+
+.input-field.errors small#first
+{
+    visibility: visible;
+    color: red
+}
+
+.input-field.success i.fa-check-circle#firstname
+{
+    visibility: visible;
+    color: lawngreen;
+    border: 0;
+}
+
+.input-field.errors i.fa-exclamation-circle#firstname
+{
+    visibility: visible;
+    color: red;
+    border: 0;
+}
+
+
+/* ------------------------------------ */
+
+/* last name */
+.input-field.success #lastname
+{
+    border-bottom-color: lawngreen;
+}
+
+.input-field.errors #lastname
+{
+    border-bottom-color: red;
+}
+
+#second
+{
+    height: auto;
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: calc(43px + 55px);
+}
+
+.input-field.errors small#second
+{
+    visibility: visible;
+    color: red
+}
+
+.input-field.success i.fa-check-circle#lastname
+{
+    visibility: visible;
+    color: lawngreen;
+    border: 0;
+}
+
+.input-field.errors i.fa-exclamation-circle#lastname
+{
+    visibility: visible;
+    color: red;
+    border: 0;
+}
+
+/* ================================================== */
+
+/* email */
+
+.input-field.success #email
+{
+    border-bottom-color: lawngreen;
+}
+
+.input-field.errors #email
+{
+    border-bottom-color: red;
+}
+
+#tree
+{
+    height: auto;
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: calc(97px + 55px);
+}
+
+.input-field.errors small#tree
+{
+    visibility: visible;
+    color: red
+}
+
+.input-field.success i.fa-check-circle#email
+{
+    visibility: visible;
+    color: lawngreen;
+    border: 0;
+}
+
+.input-field.errors i.fa-exclamation-circle#email
+{
+    visibility: visible;
+    color: red;
+    border: 0;
+}
+/* ============================================================*/
+
+/* password */
+.input-field.success #pass
+{
+    border-bottom-color: lawngreen;
+}
+
+.input-field.errors #pass
+{
+    border-bottom-color: red;
+}
+
+#forth
+{
+    height: auto;
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: calc(97px + 55px + 55px);
+}
+
+.input-field.errors small#forth
+{
+    visibility: visible;
+    color: red
+}
+
+.input-field.success i.fa-check-circle#pass
+{
+    visibility: visible;
+    color: lawngreen;
+    border: 0;
+}
+
+.input-field.errors i.fa-exclamation-circle#pass
+{
+    visibility: visible;
+    color: red;
+    border: 0;
+}
+
+/* ============================================================= */
+
+/* checkpass */
+.input-field.success #checkpass
+{
+    border-bottom-color: lawngreen;
+}
+
+.input-field.errors #checkpass
+{
+    border-bottom-color: red;
+}
+
+#five
+{
+    height: auto;
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: calc(97px + 55px + 55px + 55px);
+}
+
+.input-field.errors small#five
+{
+    visibility: visible;
+    color: red
+}
+
+.input-field.success i.fa-check-circle#checkpass
+{
+    visibility: visible;
+    color: lawngreen;
+    border: 0;
+}
+
+.input-field.errors i.fa-exclamation-circle#checkpass
+{
+    visibility: visible;
+    color: red;
+    border: 0;
+}
+/* ================================================================= */
+
+/* date */
+.input-field.success #date
+{
+    border-bottom-color: lawngreen;
+}
+
+.input-field.errors #date
+{
+    border-bottom-color: red;
+}
+
+#six
+{
+    height: auto;
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: calc(97px + 55px + 55px + 55px + 60px);
+}
+
+.input-field.errors small#six
+{
+    visibility: visible;
+    color: red
+}
+
+.input-field.success i.fa-check-circle#date
+{
+    visibility: visible;
+    color: lawngreen;
+    border: 0;
+}
+
+.input-field.errors i.fa-exclamation-circle#date
+{
+    visibility: visible;
+    color: red;
+    border: 0;
+}
+
+/* ================================================================= */
+
+/* date */
+.input-field.success #txtNationality
+{
+    border-bottom-color: lawngreen;
+}
+
+.input-field.errors #txtNationality
+{
+    border-bottom-color: red;
+}
+
+#seven
+{
+    height: auto;
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: calc(97px + 55px + 55px + 55px + 60px + 55px);
+}
+
+.input-field.errors small#seven
+{
+    visibility: visible;
+    color: red
+}
+
+.input-field.success i.fa-check-circle#National
+{
+    visibility: visible;
+    color: lawngreen;
+    border: 0;
+}
+
+.input-field.errors i.fa-exclamation-circle#National
+{
+    visibility: visible;
+    color: red;
+    border: 0;
+}
+
+/* ======================================================== */
+#first , #second , #tree , #forth , #five , #six ,#first1 ,#second1 , #seven
+{
+    visibility: hidden;
+}
+
+.aggremet
+{
+    color: white;
+}
+.ckc-bx
+{
+    color:#BF953F;
+}
+
+.aggremet:hover
+{
+    text-decoration: underline;
+}
+
+.aggremet:active
+{
+    color: red;
+}
+
+.eye
+{
+    display: none;
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    color: white;
+    right: -19px;
+    bottom: 175px;
+    transition: none;
+}
+
+#hide1
+{
+    display: none;
+}
+
+
+/* loading */
+
+.bggg
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    opacity: .3;
+    display: none;
+}
+.lds-ring 
+{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.lds-ring div 
+{
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1)
+{
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) 
+{
+    animation-delay: -0.3s;
+}
+  
+.lds-ring div:nth-child(3) 
+{
+    animation-delay: -0.15s;
+}
+  
+@keyframes lds-ring 
+{
+    0% 
+    {
+      transform: rotate(0deg);
+    }
+    100% 
+    {
+      transform: rotate(360deg);
+    }
+}

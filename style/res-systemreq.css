@@ -1,0 +1,139 @@
+@media (max-width: 1023.7px)
+{
+
+    /* footer =================================================================================*/
+    .footer
+    {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        background: #2a2a2a;
+        flex-direction: column;
+    }
+    .footer .rec .left , .footer .rec .right
+    {
+        height: 50%;
+        width: 100%;
+    }
+    .footer .rec 
+    {
+        flex-direction: column;
+    }
+    .footer .rec .right .bactoup
+    {
+        margin-bottom: 0px;
+    }
+    .footer .rec .left .copyright
+    {
+        margin-top: 55px;
+    }
+    .footer .rec .right .platform 
+    {
+        display: none;
+    }
+}
+    
+
+@media (max-width: 851px)
+{
+    .content-system
+    {
+        height: 317vh;
+    }
+}
+@media (max-height: 668px)
+{
+    
+    @media (max-width:1023.7px)
+    {
+         .content-system
+        {
+            width: 100%;
+            height: 340vh;
+            background-color: #ece8e1;
+            transform: translateY(80px);
+            display: block;
+            overflow: hidden;
+        }
+    }
+   
+}
+
+@media (max-width: 609px)
+{
+    .content-system
+    {
+        height: 370vh;
+        width: 80vh;
+    }
+    .bacground-box
+    {
+        width: 80vh;
+    }
+    .footer
+    {
+        width: 80vh;
+    }
+}
+
+@media(max-width: 426px)
+{
+    .footer .rec .left .media .wraps 
+    {
+        position: relative;
+        height: 100%;
+        width: 45px;
+        margin: 0 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+    }
+
+    .footer .rec .right .bactoup
+    {
+        font-size: 45px;
+        margin-top: 25px;
+    }
+}
+
+@media(max-width: 376px)
+{
+    .footer .rec .left .media .wraps 
+    {
+        position: relative;
+        height: 100%;
+        width: 40px;
+        margin: 0 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+    }
+    .footer .rec .left .copyright
+    {
+        padding-right: 15px;
+    }
+}
+
+@media(max-width: 321px)
+{
+    .footer .rec .left .media .wraps 
+    {
+        position: relative;
+        height: 100%;
+        width: 35px;
+        margin: 0 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    .footer .rec .right .bactoup
+    {
+        font-size: 40px;
+        margin-top: 50px;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,1110 @@
+
+body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.content-system .spesification-text svg
+{
+    transition: 1s ease-in-out;
+}
+
+
+    @font-face 
+    {
+        font-family: "UniSansHeavy";
+        src: url("custom\ font/Uni Sans Heavy Italic.otf") format("opentype");
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    .bacground-box
+    {
+        width: 100%;
+        height: 550px;
+        background-color: #ece8e1;
+        position: relative;
+        transform: translateY(80px);
+        z-index: -1;
+    }
+
+    #bacground-boxx
+    {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        position: relative;
+        background: url(systemreq/layer.png);
+        background-size: cover;
+        clip-path: polygon(100% 0, 100% 55%, 80% 100%, 0 100%, 0 0);/* pentagon 5 titik */
+    }
+
+    .container
+    {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        padding-left: 9%;
+        padding-right: 9%;
+    }
+
+    .content-system
+    {
+        width: 100%;
+        height: 1180px;
+        background-color: #ece8e1;
+        transform: translateY(80px);
+        display: block;
+        overflow: hidden;
+    }
+    
+    .content-system::after
+    {
+        content: "";
+        height: 100%;
+        width: 9rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-right: 1px solid black;
+        z-index: -1;
+    }
+
+    .content-system::before
+    {
+        content: "";
+        height: 7rem;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        border-bottom: 1px solid black;
+        z-index: -1;
+    }
+    /* content 1 */
+    .character
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .tulisan-falorant
+    {
+        position: absolute;
+        top: 0;
+        width: 110vw;
+        max-width: 160rem;
+        display: inline-block;
+    }
+
+    svg path
+    {
+        display: block;
+        stroke-width: .1;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-36%);
+        stroke: white;
+        opacity: .5;
+        fill: transparent;
+    }
+
+    svg 
+    {
+        transform: translateX(-46.5%);
+    }
+    g
+    {  
+        transform: scale(5);
+    }
+    /* ------------------------------------------------------------ */
+
+    .wrap
+    {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 1.3rem;
+        padding-top: 12.5rem;
+    }
+
+    .spek
+    {
+        padding-top: 0;
+        position: relative;
+        display: flex;
+        margin-left: calc(((100% - 21rem)/12*1 + 3rem)*1);
+        width: calc(100% - ((100% - 21rem)/12*2 + 6rem)*1);
+        min-height: 21.5rem;
+        border-top: 2.1px solid #fff;
+    }
+
+    .spek-text
+    {
+        padding-top: 1rem;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        max-width: calc(83% - 1rem);
+        max-height: 10.75rem;
+    }
+
+    .text 
+    {
+        text-decoration: none;
+        color: rgb(231, 222, 222);
+        padding: 1rem 0;
+        font-size: 6.5rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        transform: translateY(-13%);
+    }
+    .text span 
+    {
+        border-bottom: 2px solid white;
+        margin-right:7rem ;
+    }
+
+    .wrap img
+    {
+        position: absolute;
+        right: 30px;
+        top: -170px;
+        height: 700px;
+        width: auto;
+    }
+
+    /* content 2  */
+    .content-system .spesification-text
+    {
+        position: absolute;
+        height: 100px;
+        width: auto;
+        transform: translate(0 , 30rem);
+    }
+   
+    .content-system .content-system-wrapper
+    {
+        position: relative;
+        height: auto;
+        width: 100%;
+        max-width: 123rem;
+        padding: 4rem 0 11rem 0;
+        margin: 0 7.5rem;
+    }
+
+    .content-system .content-system-wrapper .content-name-system
+    {
+        margin-left: calc(((100% - 33rem)/12*1 + 3rem)*1);
+        margin-top: 3rem;
+        margin-right: 11rem;
+        display: flex;    
+    }
+
+    .content-system .content-system-wrapper .content-name-system .heading
+    {
+        padding: .1em 0;
+        font-size: 3rem;
+        font-weight: 800;
+        color: #0f1923;
+    }
+    .content-system .content-system-wrapper .content-name-system .heading span 
+    {
+         font-family: "UniSansHeavy";
+    }
+
+    /* pc fontawesome */
+    .content-system .content-system-wrapper .content-name-system .pc-font
+    {
+        height: 6.5rem;
+        width: 8rem;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #ff4655;
+        border: 1px solid #bdbcb7;
+        font-size: 43px;
+        color: rgb(230, 230, 230);
+    }
+
+    /* system */
+    .content-system .content-system-wrapper .content-name-system .system
+    {
+        height: 6.5rem;
+        width: 21rem;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #050529;
+        border: 1px solid #bdbcb7;
+        padding: 2rem 0;
+        font-weight: 700;
+    }
+
+    .content-system .content-system-wrapper .content-name-system .system .platforms
+    {
+        color: rgb(230, 230, 230);
+        padding-left: .7rem;
+        padding-right: .3rem;
+        padding-bottom: .7rem;
+        border-bottom: 1px solid #383e3a;
+    }
+
+    .content-system .content-system-wrapper .content-name-system .system .platforms::before
+    {
+        content: "";
+        position: absolute;
+        height: .2rem;
+        width: .2rem;
+        background-color: rgb(230, 230, 230);
+        border-radius: 50%;
+        top: calc(50% - 8.54585%);
+        margin-left: -11px;
+    }
+    .content-system .content-system-wrapper .content-name-system .system .Ram::before
+    {
+        content: "";
+        position: absolute;
+        height: .2rem;
+        width: .2rem;
+        background-color: rgb(230, 230, 230);
+        border-radius: 50%;
+        top: calc(50% - 8.54585%);
+    }
+    .content-system .content-system-wrapper .content-name-system .system .Vram::before
+    {
+        content: "";
+        position: absolute;
+        height: .2rem;
+        width: .2rem;
+        background-color: rgb(230, 230, 230);
+        border-radius: 50%;
+        top: calc(50% - 8.54585%);
+    }
+
+    /* table spek */
+    .content-system .content-system-wrapper .display-block
+    {
+        display: block;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table
+    {
+        display: flex;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .strip
+    {
+        height: 9rem;
+        width: 8rem;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background-color: #abb4ae;
+        padding: 3px;
+        border: 1px solid black;
+        border-left: 2px solid black;
+        border-top: 2px solid black;
+    }
+
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo
+    {
+        height: 9rem;
+        width: 8rem;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background-color: #abb4ae;
+        border: 1px solid black;
+        width: 21rem;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        overflow: hidden;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .sub
+    {
+        height: 9rem;
+        width: 8rem;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        background-color: #abb4ae;
+        border: 1px solid black;
+        width: 21rem;
+        padding: 0 3rem;
+        transition: 1s;
+    }
+
+    .End::after
+    {
+        content: "";
+        height: 3.5px;
+        margin-top: 9rem;
+        width: 33%;
+        position: absolute;
+        background-color: #FF0000;
+    }
+    /* min */
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .min
+    {
+        transform: translateX(-100%);
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .min_return
+    {
+        transform: translateX(0%);
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .slow_rotate
+    {
+        transform: rotate(180deg);
+    }
+
+    /* ======================================================================================================= */
+    /* medium */
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .med
+    {
+        color: #f7f708;
+        transform: translateX(-100%);
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .med_return
+    {
+        transform: translateX(0%);
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .medium_rotate
+    {
+        transform: rotate(180deg);
+    }
+    /* ============================================================================================================= */
+    /* high */
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .hig
+    {
+        color: #FF0000;
+        transform: translateX(-100%);
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .hig_return
+    {
+        transform: translateX(0%);
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .high_rotate
+    {
+        transform: rotate(180deg);
+    }
+    /* ============================================================================================================ */
+
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .min
+    {
+        color:white ;
+    }
+    
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo img 
+    {
+        width: 150px;
+        height: auto;
+    }
+
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .fa-chevron-right
+    {
+        font-size: 40px;
+        position: absolute;
+        right:  5px;
+        bottom: 50px;
+        transition: 1s ease-in-out;
+        z-index: 2;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .slow
+    {
+        color: #f9f7f7;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .medium
+    {
+        color: #f7f708;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .high
+    {
+        color: #FF0000;
+    }
+
+    .content-system .content-system-wrapper .content-name-system .spek-table .cpu
+    {
+        height: 9rem;
+        width: 8rem;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background-color: #ece8e1;
+        padding: 10px;;
+        border: 1px solid black;
+        border-left: 2px solid black;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .GPU
+    {
+        height: 9rem;
+        width: 8rem;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background-color: #ece8e1;
+        padding: 10px;;
+        border: 1px solid black;
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .tengah
+    {
+        height: 9rem;
+        width: 8rem;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background-color: #ece8e1;
+        border: 1px solid black;
+        border-right: 2px solid black;
+        color: #768079;
+        font-size: 14px;
+        padding: 1.23rem;
+        width: 21rem;
+    }
+    .spek-table .tengah span h2
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+    }
+
+    .content-system .content-system-wrapper .content-name-system .spek-table .gpu1 ,
+    .content-system .content-system-wrapper .content-name-system .spek-table .gpu2 ,
+    .content-system .content-system-wrapper .content-name-system .spek-table .gpu3
+    {
+        border-bottom: 2px solid black;
+    }
+    
+     /* for text */
+    .content-system .spesification-text svg
+    {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        overflow: visible;
+        height: 85px;
+        width: auto;
+        stroke-width: 1px;
+        transform: translate(5% , -17rem);
+        z-index: -1;
+        opacity: .211111;
+    }
+
+    .content-system .spesification-text svg .st0
+    {
+        stroke-width: 1px;
+    }
+
+    .display-block .tengahfor1023
+    {
+        display: none;
+    }
+
+
+
+
+@media (max-width: 1023.7px)
+{
+    /* content */
+    .bacground-box
+    {
+        width: 100%;
+        height: 550px;
+        background-color: #ece8e1;
+        position: relative;
+        transform: translateY(80px);
+        z-index: -1;
+    }
+
+    #bacground-boxx
+    {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        position: relative;
+        background: url(systemreq/layer.png);
+        background-size: cover;
+        clip-path: polygon(100% 0, 100% 55%, 80% 100%, 0 100%, 0 0);/* pentagon 5 titik */
+    }
+
+    .container
+    {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        padding-left: 9%;
+        padding-right: 9%;
+    }
+
+    .content-system
+    {
+        width: 100%;
+        height: 309vh;
+        background-color: #ece8e1;
+        transform: translateY(80px);
+        display: block;
+        overflow: hidden;
+    }
+    
+    .content-system::after
+    {
+        content: "";
+        height: 100%;
+        width: 1.9rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-right: 1px solid black;
+        z-index: -1;
+    }
+
+    .content-system::before
+    {
+        content: "";
+        height: 7rem;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        border-bottom: 1px solid black;
+        z-index: -1;
+    }
+
+    /* content 1 */
+    .character
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .tulisan-falorant
+    {
+        position: absolute;
+        top: 0;
+        width: 110vw;
+        max-width: 160rem;
+        display: inline-block;
+    }
+
+    svg path
+    {
+        display: block;
+        stroke-width: .1;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-36%);
+        stroke: white;
+        opacity: .5;
+        fill: transparent;
+    }
+
+    svg 
+    {
+        transform: translateX(-46.5%);
+    }
+    g
+    {  
+        transform: scale(5);
+    }
+    /* ------------------------------------------------------------ */
+
+    .wrap
+    {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 1.3rem;
+        padding-top: 12.5rem;
+    }
+
+    .spek
+    {
+        padding-top: 0;
+        position: relative;
+        display: flex;
+        margin-left: calc(((100% - 21rem)/12*1 + 3rem)*1);
+        width: calc(100% - ((100% - 21rem)/12*2 + 6rem)*1);
+        min-height: 21.5rem;
+        border-top: 2.1px solid #fff;
+    }
+
+    .spek-text
+    {
+        padding-top: 1rem;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        max-width: calc(83% - 1rem);
+        max-height: 10.75rem;
+    }
+
+    .text 
+    {
+        text-decoration: none;
+        color: rgb(231, 222, 222);
+        padding: 1rem 0;
+        font-size: 6.5rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        transform: translateY(-13%);
+    }
+    .text span 
+    {
+        border-bottom: 2px solid white;
+        margin-right:7rem ;
+    }
+
+    .wrap img
+    {
+        position: absolute;
+        right: 30px;
+        top: -170px;
+        height: 700px;
+        width: auto;
+    }
+
+    /* ===================================================== */
+
+    /* content 2  */
+    .content-system-block .spesification-text
+    {
+        position: absolute;
+        height: 100px;
+        width: auto;
+        transform: translate(0 , 30rem);
+    }
+   
+    .content-system-block .content-system-wrapper
+    {
+        position: relative;
+        height: auto;
+        width: 100%;
+        max-width: 123rem;
+        padding: 4rem 0 11rem 0;
+        margin: 0 4.5rem;
+    }
+
+    .content-system-block .content-system-wrapper .content-name-system
+    {
+        margin-left: calc(((100% - 33rem)/12*1 + 3rem)*1);
+        margin-top: 3rem;
+        margin-right: 11rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .content-system .content-system-wrapper .content-name-system .heading
+    {
+        padding: .1em 0;
+        font-size: 3rem;
+        font-weight: 800;
+        color: #0f1923;
+    }
+    .content-system .content-system-wrapper .content-name-system .heading span 
+    {
+         font-family: "UniSansHeavy";
+    }
+
+    /* pc fontawesome */
+    .content-system .content-system-wrapper .content-name-system .pc-font
+    {
+        height: 6.5rem;
+        width: 27rem;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #ff4655;
+        border: 1px solid #bdbcb7;
+        font-size: 43px;
+        color: rgb(230, 230, 230);
+    }
+
+    /* system */
+    .content-system .content-system-wrapper .content-name-system .system
+    {
+        height: 6.5rem;
+        width: 27rem;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #050529;
+        border: 1px solid #bdbcb7;
+        padding: 2rem 0;
+        font-weight: 700;
+    }
+
+    .content-system .content-system-wrapper .content-name-system .system .platforms
+    {
+        color: rgb(230, 230, 230);
+        padding-left: .7rem;
+        padding-right: .3rem;
+        padding-bottom: .7rem;
+        border-bottom: 1px solid #383e3a;
+    }
+
+    .content-system .content-system-wrapper .content-name-system .system .platforms::before
+    {
+        content: "";
+        position: absolute;
+        height: .2rem;
+        width: .2rem;
+        background-color: rgb(230, 230, 230);
+        border-radius: 50%;
+        top: calc(50% - 8.54585%);
+        margin-left: -11px;
+    }
+    .content-system .content-system-wrapper .content-name-system .system .Ram::before
+    {
+        content: "";
+        position: absolute;
+        height: .2rem;
+        width: .2rem;
+        background-color: rgb(230, 230, 230);
+        border-radius: 50%;
+        top: calc(50% - 8.54585%);
+    }
+    .content-system .content-system-wrapper .content-name-system .system .Vram::before
+    {
+        content: "";
+        position: absolute;
+        height: .2rem;
+        width: .2rem;
+        background-color: rgb(230, 230, 230);
+        border-radius: 50%;
+        top: calc(50% - 8.54585%);
+    }
+
+    /* table spek */
+    .content-system .content-system-wrapper .display-block
+    {
+        display: block;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table-display-none
+    {
+        display: none;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .strip
+    {
+        height: 5rem;
+        width: 27rem;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background-color: #abb4ae;
+        padding: .5rem;
+        border: 1px solid black;
+        border-top: 2px solid black;
+        margin-bottom: 5px;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .strip img 
+    {
+        width: 90px;
+        height: auto;
+    }
+
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo
+    {
+        height: 9rem;
+        width: 27rem;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background-color: #abb4ae;
+        border: 1px solid black;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+        overflow: hidden;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .sub
+    {
+        height: 9rem;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        background-color: #abb4ae;
+        border: 1px solid black;
+        width: 27rem;
+        padding: 0 3rem;
+        transition: 1s;
+    }
+
+    .End::after
+    {
+        content: "";
+        height: 3.5px;
+        margin-top: 9rem;
+        width: 33%;
+        position: absolute;
+        background-color: #FF0000;
+    }
+    /* min */
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .min
+    {
+        transform: translateX(-100%);
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .min_return
+    {
+        transform: translateX(0%);
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .slow_rotate
+    {
+        transform: rotate(180deg);
+    }
+
+    /* ======================================================================================================= */
+    /* medium */
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .med
+    {
+        color: #f7f708;
+        transform: translateX(-100%);
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .med_return
+    {
+        transform: translateX(0%);
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .medium_rotate
+    {
+        transform: rotate(180deg);
+    }
+    /* ============================================================================================================= */
+    /* high */
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .hig
+    {
+        color: #FF0000;
+        transform: translateX(-100%);
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .hig_return
+    {
+        transform: translateX(0%);
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .high_rotate
+    {
+        transform: rotate(180deg);
+    }
+    /* ============================================================================================================ */
+
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .min
+    {
+        color:white ;
+    }
+    
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo img 
+    {
+        width: 150px;
+        height: auto;
+    }
+
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .fa-chevron-right
+    {
+        font-size: 40px;
+        position: absolute;
+        right:  5px;
+        bottom: 50px;
+        transition: 1s ease-in-out;
+        z-index: 2;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .slow
+    {
+        color: #f9f7f7;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .medium
+    {
+        color: #f7f708;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .speed-logo .high
+    {
+        color: #FF0000;
+    }
+
+    .content-system .content-system-wrapper .content-name-system .spek-table .cpu
+    {
+        height: 9rem;
+        width: 8rem;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background-color: #ece8e1;
+        padding: 10px;;
+        border: 1px solid black;
+        border-left: 2px solid black;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .GPU
+    {
+        height: 9rem;
+        width: 8rem;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background-color: #ece8e1;
+        padding: 10px;;
+        border: 1px solid black;
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    .content-system .content-system-wrapper .content-name-system .spek-table .tengahfor1023
+    {
+        height: 9rem;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background-color: #ece8e1;
+        border: 1px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+        color: #768079;
+        font-size: 14px;
+        padding: 1.23rem;
+        width: 27rem;
+    }
+    .spek-table .cpus span h2
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 150;
+    }
+
+    .content-system .content-system-wrapper .content-name-system .spek-table .gpu1 ,
+    .content-system .content-system-wrapper .content-name-system .spek-table .gpu2 ,
+    .content-system .content-system-wrapper .content-name-system .spek-table .gpu3
+    {
+        border-bottom: 2px solid black;
+    }
+    
+     /* for text */
+    .content-system .spesification-text svg
+    {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        overflow: visible;
+        height: 85px;
+        width: auto;
+        stroke-width: 1px;
+        transform: translate(5% , -17rem);
+        z-index: -1;
+        opacity: .211111;
+    }
+
+    .content-system .spesification-text svg .st0
+    {
+        stroke-width: 1px;
+    }
+
+    .tengahfor1023 .item
+    {
+        color: black;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    .content-system .content-system-wrapper .content-name-system .spek-table .GPUs
+    {
+        display: flex;
+        margin-bottom: 3rem;
+        border-bottom: 2px solid black;
+    }
+
+    /* footer =================================================================================*/
+    .footer
+    {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        background: #2a2a2a;
+        flex-direction: column;
+    }
+    .footer .rec .left , .footer .rec .right
+    {
+        height: 50%;
+        width: 100%;
+    }
+    .footer .rec 
+    {
+        flex-direction: column;
+    }
+    .footer .rec .right .bactoup
+    {
+        margin-bottom: 0px;
+    }
+    .footer .rec .left .copyright
+    {
+        margin-top: 55px;
+    }
+    .footer .rec .right .platform 
+    {
+        display: none;
+    }
+}
+    
+
+@media (max-width: 851px)
+{
+    .content-system
+    {
+        height: 317vh;
+    }
+}
+@media (max-height: 668px)
+{
+    
+    @media (max-width:1023.7px)
+    {
+         .content-system
+        {
+            width: 100%;
+            height: 340vh;
+            background-color: #ece8e1;
+            transform: translateY(80px);
+            display: block;
+            overflow: hidden;
+        }
+    }
+   
+}
+
+@media (max-width: 609px)
+{
+    .content-system
+    {
+        height: 325vh;
+    }
+}
+

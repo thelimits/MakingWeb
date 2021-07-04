@@ -1,0 +1,355 @@
+<header>
+        <div id="Laforant-bar-warapper">
+            <div id="Laforant-Bar">
+                <!-- menu bagian kiri -->
+                <div id="LaforantBar-left-menu" class="LaforantBar-left-menu">
+                    <div id="LaforantBar-left-menu-logo">
+                        <span style="display: inline-block;">
+                            <a class="Laforant-logo" href="index.html">
+                                <span class="Logo">
+                                    <img class="imgs" src="style/asset/logo_army-2_1fix.png">
+                                </span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <!-- pembatas -->
+                <span class="LaforantBar-left-menu-separator"></span>
+                <!-- content nav bar -->
+                <div id="Nav-Bar" class="Nav-Bar">
+                    <div id="Laforant-Nav-Bar">
+
+                        <!-- untuk widh 1024 atau diperkecil -->
+                        <a href="#" class="logos">Laforant</a>
+                        <!-- --------------- -->
+
+                        <div id="nav-menu" class="nav-menu">
+                            <a href="index.html" class="Home">Home</a>
+                        </div>
+
+                        <div id="nav-menu" class="nav-menu">
+                            <a href="#" class="Maps">Maps</a>
+                        </div>
+
+                        <div id="nav-menu" class="nav-menu">
+                            <a href="#" class="Agents">Agents</a>
+                        </div>
+
+                        <div id="nav-menu" class="nav-menu">
+                            <a href="system_req.html" class="System-Requirements">System Requirements</a>
+                        </div>
+
+                        <div id="nav-menu" class="nav-menu">
+                            <a href="login.html" class="Pre-Register">Pre-Register</a>
+                        </div>
+
+                        <div id="nav-menu" class="nav-menu">
+                            <a href="#" class="score-board">score board</a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- pembatas-->
+                <span class="LaforantBar-left-menu-separator-2"></span>
+                <!-- menu bagian kiri -->
+                <div id="LaforantBar-right-menu" class="LaforantBar-right-menu">
+                    <div id="download-game">
+                        <a href="#" class="game button" > Download Now </a>
+                    </div>
+                </div>
+                <div id="menu-checkbar-hamburger" class="menu-checkbar-hamburger">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+        </div>
+        <!-- responsive hidden menu -->
+        <div id="hidden-box" class="hidden-box" >
+            <div id="nav-menu" class="nav-menu">
+                <a href="index.html" class="Home">Home</a>
+            </div>
+
+            <div id="nav-menu" class="nav-menu">
+                <a href="#" class="Maps">Maps</a>
+            </div>
+
+            <div id="nav-menu" class="nav-menu">
+                <a href="#" class="Agents">Agents</a>
+            </div>
+
+            <div id="nav-menu" class="nav-menu">
+                <a href="system_req.html" class="System-Requirements">System Requirements</a>
+            </div>
+
+            <div id="nav-menu" class="nav-menu">
+                <a href="login.html" class="Pre-Register">Pre-Register</a>
+            </div>
+
+            <div id="nav-menu" class="nav-menu">
+                <a href="#" class="score-board">score board</a>
+            </div>
+        </div>
+        <!-- --------------------------- -->
+    </header>
+
+
+
+
+
+    /* for navbar */
+/* @media (max-width : 1417px)
+{
+    #Nav-Bar a
+    {
+        border-bottom: 4px solid transparent;
+        color: #F9F9F9;
+        display: flex;
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 76px;
+        margin: 0 4.5px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 2px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        transition: .5s;
+    }
+} */
+
+/* @media (max-width : 1310px)
+{
+    #Nav-Bar a
+    {
+        border-bottom: 4px solid transparent;
+        color: #F9F9F9;
+        display: flex;
+        font-size: 13px;
+        font-weight: 800;
+        line-height: 76px;
+        margin: 0 3.9px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 2px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        transition: .5s;
+    }
+} */
+
+/* @media (max-width : 1279px)
+{
+    #Nav-Bar a
+    {
+        border-bottom: 4px solid transparent;
+        color: #F9F9F9;
+        display: flex;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 76px;
+        margin: 0 3px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 2px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        transition: .5s;
+    }
+}
+
+@media (max-width : 1221px)
+{
+    #Nav-Bar a
+    {
+        border-bottom: 4px solid transparent;
+        color: #F9F9F9;
+        display: flex;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 76px;
+        margin: 0 3px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 2px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        transition: .5s;
+    }
+}
+
+@media (max-width : 1200px)
+{
+    #Nav-Bar a
+    {
+        border-bottom: 4px solid transparent;
+        color: #F9F9F9;
+        display: flex;
+        font-size: 11.5px;
+        font-weight: 800;
+        line-height: 76px;
+        margin: 0 1px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 2px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        transition: .5s;
+    }
+}
+
+@media (max-width : 1163px)
+{
+    #Nav-Bar a
+    {
+        border-bottom: 4px solid transparent;
+        color: #F9F9F9;
+        display: flex;
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 76px;
+        margin: 0 1px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 2px;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        transition: .5s;
+    }
+}
+
+@media (max-width : 1150px)
+{
+    #Nav-Bar a
+    {
+        border-bottom: 4px solid transparent;
+        color: #F9F9F9;
+        display: flex;
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 76px;
+        margin: 0 1px;
+        padding-left: 11px;
+        padding-right: 11px;
+        padding-top: 2px;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        transition: .5s;
+    }
+}
+
+@media (max-width : 1103px)
+{
+    #Nav-Bar a
+    {
+        border-bottom: 4px solid transparent;
+        color: #F9F9F9;
+        display: flex;
+        font-size: 10.7px;
+        font-weight: 800;
+        line-height: 76px;
+        margin: 0 1px;
+        padding-left: 11px;
+        padding-right: 11px;
+        padding-top: 2px;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        transition: .5s;
+    }
+}
+
+@media (max-width : 1091px)
+{
+    #Nav-Bar a
+    {
+        border-bottom: 4px solid transparent;
+        color: #F9F9F9;
+        display: flex;
+        font-size: 11.5px;
+        font-weight: 800;
+        line-height: 76px;
+        margin: 0 1px;
+        padding-left: 11px;
+        padding-right: 11px;
+        padding-top: 2px;
+        letter-spacing: .9px;
+        text-transform: uppercase;
+        transition: .5s;
+    }
+
+    #Laforant-Bar .LaforantBar-left-menu-separator-2
+    {
+        height: 50px;
+        margin-left: 10px;
+        margin-right: 7px;
+        margin-top: 15px;
+        border-left: 2px solid #808080 ;
+    }
+}
+
+@media (max-width : 1058px)
+{
+    #Nav-Bar a
+    {
+        border-bottom: 4px solid transparent;
+        color: #F9F9F9;
+        display: flex;
+        font-size: 10.6px;
+        font-weight: 800;
+        line-height: 76px;
+        margin: 0 1px;
+        padding-left: 11px;
+        padding-right: 11px;
+        padding-top: 2px;
+        letter-spacing: .9px;
+        text-transform: uppercase;
+        transition: .5s;
+    }
+
+    #Laforant-Bar .LaforantBar-left-menu-separator-2
+    {
+        height: 50px;
+        margin-left: 10px;
+        margin-right: 7px;
+        margin-top: 15px;
+        border-left: 2px solid #808080 ;
+    }
+}
+
+@media (max-width : 1024px ) 
+{
+    .kotak img
+    {
+        position: absolute;
+        width: 3.5rem;
+        height:3.5rem;
+        transition: none;
+        z-index: 4;
+        transform: translate(-5px ,-7.5rem);
+        left: 46%;
+        z-index: 3;
+    }
+
+    .video-wrapper:hover .kotak  img
+    {
+        animation-name: scales;
+        animation-iteration-count: infinite;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes scales
+    {
+        0%
+        {
+            transform: translate(-3 ,-7.5rem);
+        }
+        50%
+        {
+            transform: translate(-7px ,-7.5rem);
+        }
+    }
+} */
+
+
+jika validasi menggunakan Regex pada bag name , pass , nationality
+/*[A-Z][a-z\s] + or * $/ -> harus character + spaces=>\s + newline or enter + $->function string in js

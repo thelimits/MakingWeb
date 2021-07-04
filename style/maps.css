@@ -1,0 +1,515 @@
+@font-face
+{
+    font-family: sport;
+    src: url(custom\ font/SFSportsNight.ttf);
+}
+.fa-caret-down
+{
+    display: none;
+}
+section
+{
+    overflow: hidden;
+}
+.maps-wappers
+{
+    transform: translateY(80px);
+    display: block;
+    min-height: 100%;
+    width: 100%;
+}
+
+.maps-wappers .select-type
+{
+    background: linear-gradient(to top,rgba(0,0,0,.5) ,rgba(0,0,0,.1)),url(asset/laforant-logo-red-4k-tt.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 65vh;
+    width: 100%;
+    padding: 0 7.3%;
+}
+
+.maps-wappers .select-type .tittle
+{
+    text-align: center;
+    margin: 30px 0;
+    margin-top: 7rem;
+    color:#ece8e1;
+    font-size: 1.5rem;
+    padding: 1px;
+}
+
+.maps-wappers .select-type .tittle h2
+{
+    font-weight: 300;
+    font-family: sport;
+}
+
+.maps-wappers .select-type .sentence
+{
+    width: 75%;
+    height: auto;
+    font-size: 1.4rem;
+    color: #ece8e1;
+    text-align: center;
+}
+.maps-wappers .select-type .sentence h4
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.maps-wappers .select-type .button-wraps
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.maps-wappers .select-type .button-wraps .capsulated-button
+{
+    border: 3px solid #ece8e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11rem;
+    height: 4rem;
+    margin: 0 1rem;
+    margin-top: 1rem;
+}
+
+.maps-wappers .select-type .button-wraps .capsulated-button a 
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color:#ece8e1 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; 
+    font-size: 21px;
+    font-weight: 800;
+    overflow: hidden;
+    background: linear-gradient(to right ,black,black 50%, #ece8e1 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: 700ms ease;
+}
+
+.maps-wappers .select-type .button-wraps .capsulated-button a:hover
+{
+    background-position: 0% 0;
+}
+
+.maps-wappers .select-type .button-wraps .capsulated-button:hover
+{
+    width: 11.5rem;
+    height: 4.5rem;
+}
+
+.maps-wappers .choose-type
+{
+    display: flex;
+    background: black;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    padding: 0 7.3%;
+}
+
+.maps-wappers .choose-type .tittle
+{
+    text-align: center;
+    margin: 30px 0;
+    margin-top: 3rem;
+    color:#ece8e1;
+    font-size: 1.5rem;
+    padding: 1px;
+}
+
+.maps-wappers .choose-type .tittle h2
+{
+    font-weight: 300;
+    font-family: sport;
+}
+
+.maps-wappers .choose-type .sentence
+{
+    width: 75%;
+    height: auto;
+    font-size: 1.4rem;
+    color: #ece8e1;
+    text-align: center;
+}
+
+.maps-wappers .choose-type .sentence h4
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.maps-wappers .choose-type  .container-choose
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps-wappers .choose-type  .container-choose .choose-maps
+{
+    display: flex;
+    width: 8rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps-wappers .choose-type  .container-choose .choose-maps h5
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ece8e1;
+    font-size: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
+.maps-wappers .choose-type  .container-choose .choose-maps .blind
+{
+    transition: .5s;
+    width: 5rem;
+}
+.maps-wappers .choose-type  .container-choose .choose-maps .Ice ,
+.maps-wappers .choose-type  .container-choose .choose-maps .temple,
+.maps-wappers .choose-type  .container-choose .choose-maps .Magic,
+.maps-wappers .choose-type  .container-choose .choose-maps .cast,
+.maps-wappers .choose-type  .container-choose .choose-maps .Town
+{
+    transition: .5s;
+    width: 6rem;
+}
+.maps-wappers .choose-type  .container-choose .choose-maps .Sky
+{
+    transition: .5s;
+    width: 6rem;
+}
+.maps-wappers .choose-type  .container-choose .choose-maps h5:hover
+{
+    width: 7rem;
+    border-bottom: 3px solid red;
+}
+.maps-wappers .img-wrap 
+{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    width: 500%;
+}
+.maps-wappers .img-wrap2
+{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+}
+.maps-wappers .img-wrap .image1
+{
+    height: 60vh;
+    width: 100%;
+    background-image: url(asset/Fortnite\ Banner\ Assets\ Pack\ -\ by\ Visual.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: translate(0 , 0);
+    transition: 1.5s ease-in-out;
+}
+
+.maps-wappers .img-wrap .image2
+{
+    height: 60vh;
+    width: 100%;
+    background-image: url(asset/Fortnite\ Banner\ Assets\ Pack\ pirate\ -\ by\ Visual.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: translate(0 , 0);
+    transition: 1.5s ease-in-out;
+}
+.maps-wappers .img-wrap .image3
+{
+    height: 60vh;
+    width: 100%;
+    background-image: url(asset/Fortnite\ Banner\ Assets\ Pack\ temple-\ by\ Visual.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: translate(0 , 0);
+    transition: 1.5s ease-in-out;
+}
+.maps-wappers .img-wrap .image4
+{
+    height: 60vh;
+    width: 100%;
+    background-image: url(asset/Fortnite\ Banner\ Assets\ Pack\ town-\ by\ Visual.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: translate(0 , 0);
+    transition: 1.5s ease-in-out;
+}
+.maps-wappers .img-wrap .image5
+{
+    height: 60vh;
+    width: 100%;
+    background-image: url(asset/skys.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: translate(0 , 0);
+    transition: 1.5s ease-in-out;
+}
+
+.maps-wappers .img-wrap2 .Magic-img 
+{
+    height: 60vh;
+    width: 100%;
+    background-image: url(asset/Fortnite\ Banner\ Assets\ Pack\ magic-\ by\ Visual.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: translate(0 , 0);
+    transition: 1.5s ease-in-out;
+}
+.maps-wappers .img-wrap2 .castle 
+{
+    height: 60vh;
+    width: 100%;
+    background-image: url(asset/castillo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: translate(0 , 0);
+    transition: 1.5s ease-in-out;
+}
+.maps-wappers .img-wrap .img:hover ,.maps-wappers .img-wrap2 .img:hover 
+{
+    background-size: 107%;
+}
+/* read maps description */
+.maps-wappers .readmaps
+{
+    width: 100%;
+    height: 50vh;
+    background: #ece8e1;
+    flex-direction: column;
+    position: relative;
+    padding: 0 19%;
+}
+
+.maps-wappers .readmaps .blind-mps
+{
+    display: block;
+}
+
+.maps-wappers .readmaps .pirate
+{
+    display: none;
+}
+.maps-wappers .readmaps .temple
+{
+    display: none;
+}
+.maps-wappers .readmaps .Towns
+{
+    display: none;
+}
+.maps-wappers .readmaps .skys
+{
+    display: none;
+}
+.maps-wappers .readmaps .calstle
+{
+    display: none;
+}
+.maps-wappers .readmaps .tittle
+{
+    color:black;
+    font-size: 1.5rem;
+    padding: 1px;
+}
+
+.maps-wappers .readmaps .tittle h2
+{
+    margin-top: 3rem;
+    font-weight: 300;
+    font-family: sport;
+    font-size: 45px;
+}
+
+.maps-wappers .readmaps .sentence
+{
+    margin-top: 3rem;
+    width: 75%;
+    height: auto;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.maps-wappers .readmaps .sentence h4
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.accunt
+{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 14px;
+    display: none;
+}
+
+@media (max-width : 1024px)
+{
+    .maps-wappers .readmaps
+    {
+        height: 65vh;
+    } 
+}
+
+@media (max-width : 769px)
+{
+    .maps-wappers .readmaps
+    {
+        height: 75vh;
+    } 
+    .maps-wappers .select-type
+    {
+        height: 80vh;
+    }
+    .maps-wappers .choose-type
+    {
+        height: 50vh;
+    }
+}
+
+@media (max-width : 426px)
+{
+    .maps-wappers .readmaps
+    {
+        height: 130vh;
+    } 
+
+    .maps-wappers .select-type
+    {
+        height: 100vh;
+    }
+    .maps-wappers .mps1
+    {
+        height: 105vh;
+    }
+    .maps-wappers .mps2
+    {
+        height: 65vh;
+    }
+    .maps-wappers .mps2 .container-choose
+    {
+        flex-direction: row;
+    }
+    
+    .maps-wappers .mps1 .container-choose
+    {
+        flex-direction: column;
+    }
+}
+
+@media (max-width : 376px)
+{
+    .maps-wappers .readmaps
+    {
+        height: 135vh;
+    } 
+    .maps-wappers .select-type .button-wraps
+    {
+        flex-direction: column;
+    }
+    .maps-wappers .select-type
+    {
+        height: 125vh;
+    }
+    .maps-wappers .mps1
+    {
+        height: 105vh;
+    }
+    .maps-wappers .mps2
+    {
+        height: 65vh;
+    }
+    .maps-wappers .mps2 .container-choose
+    {
+        flex-direction: row;
+    }
+    
+    .maps-wappers .mps1 .container-choose
+    {
+        flex-direction: column;
+    }
+    .maps-wappers .select-type .tittle
+    {
+        margin-top: 3rem;
+    }
+}
+@media (max-width : 321px)
+{
+    .maps-wappers .readmaps
+    {
+        height: 170vh;
+    } 
+    .maps-wappers .select-type .button-wraps
+    {
+        flex-direction: column;
+    }
+    .maps-wappers .select-type
+    {
+        height: 135vh;
+    }
+    .maps-wappers .mps1
+    {
+        height: 115vh;
+    }
+    .maps-wappers .mps2
+    {
+        height: 65vh;
+    }
+    .maps-wappers .mps2 .container-choose
+    {
+        flex-direction: row;
+    }
+    
+    .maps-wappers .mps1 .container-choose
+    {
+        flex-direction: column;
+    }
+    .maps-wappers .select-type .tittle
+    {
+        margin-top: 3rem;
+    }
+}

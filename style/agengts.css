@@ -1,0 +1,489 @@
+@font-face 
+{
+    font-family: qore;
+    src: url("custom\ font/Qore.ttf");
+}
+
+.content-baground
+{
+    height: 90vh;
+    transform: translateY(80px);
+    width: 100%;
+    display: flex;
+    position: relative;
+    background: url(asset/EZdU_SPXgAEsjre.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: 1s ease-in;
+    overflow: hidden;
+}
+
+.content-baground .selected
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 5rem;
+    color: gold;
+    
+}
+
+.content-baground .selected .menu
+{
+    display: none;
+}
+
+.content-baground .selected .prev
+{
+    position: absolute;
+    z-index: 1;
+    font-size: 24px;
+    height: auto;
+    width: auto;
+    left: 30px;
+    transform: translateY(-60px);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.content-baground .selected .next
+{
+    position: absolute;
+    z-index: 1;
+    font-size: 24px;
+    height: auto;
+    width: auto;
+    left: 500px;
+    transform: translateY(-60px);
+    cursor: pointer;
+    transition: .5s;
+}
+.content-baground .selected span
+{
+    font-family: TnaLogoM2LPimport;
+    margin-left: 3rem;
+    display: block;
+    transform: translateX(0);
+    transition: 1.5s ease;
+    visibility: visible;
+}
+
+.content-baground .selected .characters
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-right: 20%;
+    width: auto;
+    height: 100%;
+}
+
+.content-baground .selected .type
+{
+    position: absolute;
+    height: 80%;
+    margin-left: 40%;
+    width: 21rem;
+    display: block;
+    border-bottom: 1px solid white;
+    animation: type 1s alternate;
+    top: 0;
+}
+
+.content-baground .selected .type1,
+.content-baground .selected .type2,
+.content-baground .selected .type3,
+.content-baground .selected .type4,
+.content-baground .selected .type5,
+.content-baground .selected .type6,
+.content-baground .selected .type7,
+.content-baground .selected .type8,
+.content-baground .selected .type9,
+.content-baground .selected .type10,
+.content-baground .selected .type11,
+.content-baground .selected .type12,
+.content-baground .selected .type13,
+.content-baground .selected .type14,
+.content-baground .selected .type15
+{
+    display: none;
+}
+
+@keyframes type 
+{
+    0%
+    {
+        opacity: 0;
+        top: 100px;
+    }
+    100%
+    {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.content-baground .selected .type .role .roles
+{
+    display: block;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 50px 0 10px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+}
+
+.content-baground .selected .type .role h3
+{
+    font-size: 2.5rem;
+    font-family: qore;
+    color: white;
+    letter-spacing: -2px;
+}
+
+.content-baground .selected .type .role .bio 
+{
+    display: block;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 50px 0 10px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+}
+
+.content-baground .selected .type .role .bios
+{
+    display: block;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    letter-spacing: normal;
+}
+@keyframes chars
+{
+    0% 
+    {
+        opacity: 0;
+        transform: translateX(-150%);
+    } 
+    100% 
+    {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+}
+@keyframes chars-astr
+{
+    0% 
+    {
+        opacity: 0;
+        transform: translateX(-150%);
+    }
+    100% 
+    {
+        opacity: 1;
+        transform: translateX(0%),scale(.37);
+    }
+
+}
+
+.selected .characters .ch 
+{
+    display: none;
+    transition: 1s ease-in-out;
+}
+
+.selected .characters .ch.active
+{
+    display: block;
+}
+
+.selected .characters .charac-1
+{
+    animation: chars 2s alternate ;
+    width: 365px;
+    height: auto;
+    opacity: 2;
+}
+
+.selected .characters .charac-2
+{
+    animation: chars-astr 2s alternate ;
+    transform: scale(.37);
+}
+
+.selected .characters .charac-3
+{
+    animation: chars 2s alternate ;
+    width: 300px;
+    height: auto;
+}
+
+.selected .characters .charac-4
+{
+    animation: chars 2s alternate ;
+    width: 300px;
+    height: auto;
+}
+
+.selected .characters .charac-5 
+{
+    animation: chars 2s alternate ;
+    width: 505px;
+    height: auto;
+}
+
+.selected .characters .charac-6 
+{
+    animation: chars 2s alternate ;
+    width: 246px;
+    height: auto;
+}
+
+.selected .characters .charac-7 
+{
+    animation: chars 2s alternate ;
+    width: 375px;
+    height: auto;
+}
+
+.selected .characters .charac-8
+{
+    animation: chars 2s alternate ;
+    width: 310px;
+    height: auto;
+}
+
+.selected .characters .charac-9
+{
+    animation: chars 2s alternate ;
+    width: 345px;
+    height: auto;
+}
+
+.selected .characters .charac-10
+{
+    animation: chars 2s alternate ;
+    width: 445px;
+    height: auto;
+}
+
+.selected .characters .charac-11
+{
+    animation: chars 2s alternate ;
+    width: 315px;
+    height: auto;
+}
+
+.selected .characters .charac-12
+{
+    animation: chars 2s alternate ;
+    width: 380px;
+    height: auto;
+}
+
+.selected .characters .charac-13
+{
+    animation: chars 2s alternate ;
+    width: 265px;
+    height: auto;
+}
+
+.selected .characters .charac-14
+{
+    animation: chars 2s alternate ;
+    width: 365px;
+    height: auto;
+}
+
+.selected .characters .charac-15
+{
+    animation: chars 2s alternate ;
+    width: 330px;
+    height: auto;
+}
+
+.content-slider
+{
+    height: 100%;
+    width:70vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.content-slider .Item  
+{
+    padding:5rem 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    transform: scale(0.98);
+    transition: .5s ease;
+    font-size: 0;
+    margin-right: 120px;
+}
+.content-slider .Item:hover
+{
+    transform: translateX(-30px);
+}
+.content-slider .Item span
+{
+    font-size:50px ;
+    color: #ece8e1;
+    font-family: qore;
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+
+.content-slider .Item span .no 
+{
+    position: absolute;
+    font-size: 17px;
+    margin-left: 25px;
+    font-weight: bolder;
+    text-align: center;
+}
+.content-slider .Item:hover span
+{
+    color: red;
+}
+.actives
+{
+    cursor: grabbing;
+}
+.clicks
+{
+    color: red;
+    transform: translateX(-23px);
+}
+
+@media (max-width: 1025px)
+{
+    .content-baground .selected
+    {
+        width: 50%;
+    }
+
+    .content-slider
+    {
+        width: 37.5vw;
+        right: -135px;
+    }
+
+    .content-slider .Item
+    {
+        margin-right: 0px;
+    }
+
+    .content-slider .Item span
+    {
+        font-size: 40px;
+        transform: translateX(-30px);
+        font-weight: 700;
+    }
+
+    .content-slider .Item span .no
+    {
+        margin-left: 35px;
+    }
+}
+.slid
+{
+    display: none;
+}
+@media (max-width: 769px)
+{
+    .content-slider
+    {
+        display: none;
+    }
+
+    .content-baground .selected .characters 
+    {
+
+        margin-left: 30%;
+    
+    }
+    .content-baground .selected .type 
+    {
+        right: 25px;
+    }
+
+    .slid
+    {
+        display: flex;
+        height: 10vh;
+        width: 100%;
+        overflow: hidden;
+        background: linear-gradient(to bottom , rgb(0, 0, 0),rgb(0, 0, 0));
+        transform: translateY(80px);
+    }
+
+    .content-baground .selected span
+    {
+        transform: translateX(170px);
+    }
+  
+    .content-sliderformobile
+    {
+        height: 100%;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        white-space: nowrap;
+        user-select: none;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .content-sliderformobile .Item  
+    {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        transform: scale(0.98);
+        transition: .5s ease;
+        font-size: 0;
+        margin-right: 120px;
+        margin-left: 30px;
+    }
+
+    .content-sliderformobile .Item span
+    {
+        font-size:50px ;
+        color: #ece8e1;
+        font-family: qore;
+        text-transform: uppercase;
+        font-weight: 1000;
+    }
+
+    .content-sliderformobile .Item span .no 
+    {
+        position: absolute;
+        font-size: 17px;
+        margin-left: 25px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .content-sliderformobile .Item:hover span
+    {
+        color: red;
+    }
+    
+}

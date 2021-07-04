@@ -1,0 +1,958 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    min-height: 100vh;
+    width: 100%;
+}
+
+div
+{
+    display: block;
+}
+
+header
+{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+
+#Laforant-bar-warapper
+{
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+}
+
+#Laforant-Bar
+{
+    position: fixed;
+    border-bottom: 3px solid #333333;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #111111;
+    position: relative;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: normal;
+    text-align: left;
+    /* agar posisi paling depan */
+    z-index: 35000;
+}
+
+/* menu  kiri --------------------------------------------------------------- */
+#Laforant-Bar .LaforantBar-left-menu
+{
+    height: 80px;
+    padding: 15px 35px 0 0 ;
+}
+
+#LaforantBar-left-menu-logo
+{
+    height: 50px;
+    color: #F9F9F9;
+    font-size: 14px;
+}
+
+#LaforantBar-left-menu-logo .Laforant-logo
+{
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    margin-left: 35px;
+    width: 75px;
+}
+
+#LaforantBar-left-menu-logo .Laforant-logo .Logo
+{
+    width: 160px;
+    height: 160px;
+    transform: scale(0.45);
+    position: absolute;
+    top: -55px;
+    left: -55px;
+    z-index: 70000;
+}
+
+#LaforantBar-left-menu-logo .Laforant-logo .Logo .imgs
+{
+    margin-top: 25px;
+    width: 100%;
+    height: auto;
+}
+
+/* =================================================================================================================== */
+#Laforant-Bar .LaforantBar-left-menu-separator
+{
+    height: 50px;
+    margin-left: 0;
+    margin-right: 32px;
+    margin-top: 15px;
+    border-left: 2px solid #808080 ;
+}
+
+/* menu  navbar tengah yaitu menunya --------------------------------------------------------------- */
+
+#Laforant-Bar .Nav-Bar
+{
+    height: 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+#Laforant-Nav-Bar
+{
+    height: 80px;
+    max-width: 100%;
+    text-align: center;
+    display: table;
+    margin-right: 0;
+}
+
+#Laforant-Nav-Bar .nav-menu
+{
+    display: inline-block;
+    position: relative;
+    height: 80px;
+}
+
+#Nav-Bar a
+{
+    color: #F9F9F9;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 76px;
+    margin: 0 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 2px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+#Nav-Bar .logos
+{
+    display: none;
+}
+
+#Nav-Bar .main:hover
+{
+    color: red;
+    border-bottom: 3.5px solid red;
+}
+
+.nav-menu .Home:hover
+{
+    cursor: default;
+}
+
+#Laforant-Nav-Bar .fa-caret-down
+{
+    position: absolute;
+    color: rgb(74, 74, 74);
+    transform: translate(-10px , 35px);
+    
+}
+
+/* submenu [][][][][][][][][][][][][[][][[][][][][][]][][]][][][][]][][][][][][][][]][][][][][[]][] */
+#Laforant-Bar .submenu
+{
+    transform: translate(190px , 79.7px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    min-height: 100px;
+    width: 250px;
+    background-color: #111111;
+    transition: .5s;
+}
+#Laforant-Bar .submenu .sb-menu
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 3rem;
+    height: 100%;
+    margin-top: 1px;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+#Laforant-Bar .submenu .sb-menu1:hover,
+#Laforant-Bar .submenu .sb-menu2:hover,
+#Laforant-Bar .submenu .sb-menu3:hover,
+#Laforant-Bar .submenu .sb-menu4:hover
+{
+    color: red;
+    background-color: rgb(66, 66, 66);
+    cursor: pointer;
+}
+
+
+/* =================================================================================================================== */
+/* =================================================================================================================== */
+
+#Laforant-Bar .LaforantBar-left-menu-separator-2
+{
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-top: 15px;
+    border-left: 2px solid #808080 ;
+}
+
+/* menu  kanan --------------------------------------------------------------- */
+
+#Laforant-Bar .LaforantBar-right-menu
+{
+    right: 0;
+    padding-right: 10px;
+}
+
+#download-game
+{
+    float: left;
+    white-space: nowrap;
+    height: 80px;
+    width: 100%;
+}
+
+#download-game .game 
+{
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px 15px;
+    vertical-align: middle;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#download-game .game.button
+{
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 16px;
+    height: 41px;
+    padding: 12px 0;
+    position: relative;
+    min-width: 129px;
+    max-width: 220px;
+    border-radius: 5px;
+    z-index: 0;
+    background: rgb(241, 79, 79);
+    color:#F9F9F9 ;
+    transition: 1s;
+}
+
+#download-game .game.button:hover
+{
+    background: rgb(255, 0, 0);
+    color: #111111;
+}
+
+/* content */
+.content
+{
+    display: flex;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    top: 80px;
+    max-width: 100%;
+    height: calc(100vh - 5px);
+    background: url(https://drive.google.com/uc?id=1h_vRWXbTGm2evTb9lrmPSrLYwIeMTNIW);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 51%, 100% 75%, 96% 94%, 82% 100%, 0 100%, 0 45%);
+}
+
+.content .vidsss
+{
+    width: 100%;
+    height: 100%;
+}
+
+#backdrop , #backdrop2 ,#backdrop3
+{
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+    background: black;
+    transform: translateY(80px);
+}
+
+#backdrop2
+{
+    background-color: #ece8e1 ;
+}
+
+#backdrop3
+{
+    transform: translateY(77px);
+    background: #ff4656f5;
+    border: none;
+}
+
+#backdrop2::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.5%;
+    top: 0;
+    height: 100%;
+    left: 0;
+    border-right: 3px solid black;opacity: .3;
+}
+
+.wrapper-middle-content
+{
+    height: 100%;
+    width: 100%;
+    padding: 75px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#wrapper-middle-content .games span
+{
+    z-index: 1;
+}
+
+.wrapper-middle-content .homeLogo
+{
+    display: table;
+    position: relative;
+    text-align: center;
+    margin: 56px 70px;
+}
+
+.homeLogo .text
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 38px;
+    line-height: 1.5;
+}
+
+.homeLogo .Tittle
+{
+    text-align: center;
+    color: whitesmoke;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family:TnaLogoM2LPimport;
+    font-size: 49px;
+    margin-bottom: 20px;
+}
+
+.Tittle
+{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#wrapper-middle-content .games 
+{
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 0px;
+    margin-left: 9px;
+    margin-right: 8.5px;
+    justify-content: center;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#wrapper-middle-content
+{
+    overflow: hidden;
+} 
+
+/* second content */
+.second-content 
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #ece8e1;
+    transform: translateY(80px);
+    overflow: hidden;
+}
+
+.second-content #Layer_1
+{
+    position: absolute;
+    z-index: -1;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    transform: translate(100%,319%);
+    fill: none;
+    stroke-width: 5px;
+    stroke: black;
+    opacity: .05;
+    overflow: visible;
+    transition:  2s ease-in-out ;
+}
+
+.second-content #Layer_1 g
+{
+    transform: scale(7);
+    -webkit-transform: scale(7);
+}
+
+.second-content img
+{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.77);
+    z-index: -3;
+    opacity: .77;
+    transition:  1.77s ease-in-out ;
+   
+}
+
+.second-content .containers
+{
+    display: flex;
+    position: absolute;
+    padding: 0 7.5%;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.second-content .containers .wrapperss 
+{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+.second-content .containers::before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 13%;
+    left: 0;
+    border-bottom: 3px solid black;opacity: .3;
+}
+
+.second-content .containers::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.5%;
+    top: 0;
+    height: 100%;
+    left: 0;
+    border-right: 3px solid black;opacity: .3;
+}
+
+.namess
+{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    transform: translateY(13vh);
+    opacity: 1;
+    z-index: 5;
+}
+
+.char
+{
+    font-family: sans-serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-left: 7%;
+    margin-bottom: 5%;
+    visibility: hidden;
+}
+
+.slideup-char
+{
+  animation-name: slideup-char;
+  -webkit-animation-name: slideup-char;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 100px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-left: 7%;
+  margin-bottom: 5%;
+  visibility: visible;
+}
+
+
+@keyframes slideup-char 
+{
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  
+  @-webkit-keyframes slideup-char 
+  {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+}
+
+
+.slideup-textt
+{
+  animation-name: slideup-textt;
+  -webkit-animation-name: slideup-textt;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+
+  margin-left: calc(((100% - 55rem)/14*2 + 6rem)*1);
+  margin-bottom: 8rem;
+  padding: 4rem 0;
+  max-width: calc(30% - 2.25rem);
+  width: 100%;
+  position: relative;
+  display: block;
+  font-family: arial,georgia,sans-serif;
+  visibility: visible;
+
+}
+@keyframes slideup-textt
+{
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+    }
+  }
+  
+  @-webkit-keyframes slideup-textt
+  {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+    }
+  }
+
+  .slideup-textt  h5
+{
+    font-size: 27px;
+    font-weight: 700;
+    margin: 0 0 2.5rem;
+    letter-spacing: -.03em;
+}
+
+.slideup-textt  p
+{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.7;
+    width: 101%;
+    color: #768079;
+}
+
+
+.second-content .containers .wrapperss .text-text
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 70%;
+    transform: translateY(15%);
+}
+
+.textt , .gambars
+{
+    height: 100%;
+    width: 50%;
+    
+}
+
+.gambars
+{
+    display: flex;
+    align-items: center;
+}
+
+.gambars .video-wrapper
+{
+    margin-left: 7rem;
+    position: absolute;
+    width: 57%;
+    height: 65%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.video-wrapper
+{
+    background: url(asset/Screenshot.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    animation-name: video-wrapper-slide;
+    -webkit-animation-name: video-wrapper-slide ;
+
+}
+
+@keyframes video-wrapper-slide 
+{
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    } 
+    100% {
+      opacity: 1;
+     transform: translateX(0%);
+    }
+  }
+  
+@-webkit-keyframes video-wrapper-slide 
+  {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(100%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+    }
+  }
+
+
+.video-wrapper::after
+{
+    content: "";
+    height: 1rem;
+    width: 45%;
+    border-bottom: 5px solid red;
+    left: 0;
+    position: absolute;
+    bottom: -4.5px;
+}
+
+.video-wrapper .kotak
+{
+    width: 70px;
+    height: 70px;
+    background :#ff4656f5;
+    border : 2px solid white;
+    overflow: hidden;
+    padding: 0;
+}
+
+.kotak::before
+{
+    content: "";
+    position: absolute;
+    display: block;
+    transform: translate(-21%, -21%);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-top:4px solid rgba(236,232,225,.8) ;
+    border-left:4px solid rgba(236,232,225,.8) ;
+    z-index: 1;
+    transition: .5s ease-in-out;
+}
+
+.video-wrapper .kotak::after
+{
+    content: "";
+    position: absolute;
+    display: block;
+    transform: translate(2rem, -6rem);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-right:4px solid rgba(236,232,225,.8) ;
+    border-bottom:4px solid rgba(236,232,225,.8) ;
+    z-index: 1;
+    transition: .5s ease-in-out;
+}
+
+.video-wrapper .kotak .arrows
+{
+    position: relative;
+    height: 8rem;
+    width: 9rem;
+    background: #111111;
+    transform: translateY(-1.95rem);
+    left: -12rem;
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    transition: left .7s ease-in-out;
+}
+
+.video-wrapper:hover .kotak .arrows
+{
+    left: -5px;
+}
+
+.video-wrapper:hover .kotak::after
+{
+    transform: translate(1.3rem, -6.7rem);
+    animation-name: scaless;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+
+.video-wrapper:hover .kotak::before
+{
+    transform: translate(1px,1px);
+    animation-name: scalesss;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+.video-wrapper:hover 
+{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,.1)),url(asset/Screenshot.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+@keyframes scaless
+{
+    0%
+    {
+        transform: translate(1.3rem, -6.7rem);
+    }
+    50%
+    {
+        transform: translate(1.1rem, -6.9rem);
+    }
+}
+
+@keyframes scalesss
+{
+    0%
+    {
+        transform: translate(1px,1px);
+    }
+    50%
+    {
+        transform: translate(4.1px,4.1px);
+    }
+}
+.kotak img
+{
+    position: absolute;
+    width: 3.5rem;
+    height:3.5rem;
+    transition: none;
+    z-index: 4;
+    transform: translate(0 ,-7.5rem);
+    left: 46%;
+    z-index: 3;
+}
+
+.video-wrapper:hover .kotak  img
+{
+    animation-name: scales;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+
+@keyframes scales
+{
+    0%
+    {
+        transform: translate(0 ,-7.5rem);
+    }
+    50%
+    {
+        transform: translate(3px ,-7.5rem);
+    }
+}
+
+/* ========================================================================================== */
+.textt
+{
+    visibility: hidden;
+}
+
+/* tri content */
+.tri-content
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color:#ff4656f5;
+    transform: translateY(80px);
+    overflow: hidden;
+    clip-path: polygon(0 0, 8% 9%, 32% 9%, 32% 5%, 63% 5%, 63% 9%, 90% 9%, 100% 0, 100% 100%, 0 100%);
+}
+
+.tri-content::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.5%;
+    top: 0;
+    height: 100%;
+    left: 0;
+    border-right: 3px solid black;opacity: .3;
+}
+
+.tri-content .particle2
+{
+    width: 100%;
+    height: 100%;
+    transform: scale(3);
+    z-index: -3;
+    opacity: .45;
+    transition:  2s ease-in-out ;
+    
+}
+
+
+/* ========================================================================================================== */
+/* buat box diluar button content */
+#wrapper-middle-content .games::before
+{
+    content: "";
+    display: block;
+    right: -8px;
+    top: 31px;
+    border-bottom: 4px solid rgba(236,232,225,.8);
+    border-left: 4px solid rgba(236,232,225,.8);
+    border-right: 4px solid rgba(236,232,225,.8);
+    position: absolute;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: calc(50% - .1rem);
+    width: 105%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#wrapper-middle-content .games::after
+{
+    content: "";
+    display: block;
+    right: -8px;
+    bottom: 31px;
+    border-top: 4px solid rgba(236,232,225,.8);
+    border-left: 4px solid rgba(236,232,225,.8);
+    border-right: 4px solid rgba(236,232,225,.8);
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: calc(50% - .1rem);
+    width: 105%;
+    overflow: hidden;
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+
+#wrapper-middle-content .games.buttons
+{
+    display: flex;
+    vertical-align: 50%;
+    font-size: 12px;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    line-height: 16px;
+    height: 50px;
+    padding: 16.9px 0;
+    position: relative;
+    min-width: 186px;
+    max-width: 250px;
+    border-radius: 10px;
+    background: rgb(241, 79, 79);
+    color:#F9F9F9 ;
+    transition-delay: .9s;
+}
+#wrapper-middle-content  .hovers
+{
+    width: 108.8%;
+    height: 70%;
+    position: absolute;
+    background-color: black;
+    transform: translate(-250px, 49%);
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius: 5px;
+    transition: .5s ease-in-out;
+}
+#wrapper-middle-content  .hovers2
+{
+    width: 108.8%;
+    height: 70%;
+    position: absolute;
+    background-color: black;
+    transform: translate(250px, -49%);
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px;
+    transition: .5s ease-in-out;
+}
+
+#wrapper-middle-content .games.buttons:hover  .hovers
+{
+    transform: translate(0px, 45%);
+}
+
+#wrapper-middle-content .games.buttons:hover  .hovers2
+{
+    transform: translate(0px, -45%);
+}
+
+/* ============================================================================================================================== */
+
+
+
