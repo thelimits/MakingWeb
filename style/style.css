@@ -264,6 +264,11 @@ header
     transition: 1s;
 }
 
+#download-game .game.button #logout
+{
+    display: none;
+}
+
 #download-game .game.button:hover
 {
     background: rgb(255, 0, 0);

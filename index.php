@@ -1,10 +1,12 @@
 <!-- please open with live server -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='style/asset/Omen_artwork.svg' rel='shortcut icon'>
     <!-- link for font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -14,7 +16,6 @@
     <!-- link for css -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/style2.css">
-    <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/res-Home.css">
     <link rel="stylesheet" href="style/loading.css">
     <title>LaForant</title>
@@ -33,126 +34,12 @@
     <iframe class = "video" id ="video" src="https://www.youtube.com/embed/eU1l7eBy2_Y?start=3&end=157&version=3&showinfo=0&rel=0&enablejsapi=1&loop=1&playlist=eU1l7eBy2_Y&modestbranding=1&autohide=1" frameborder="0"  allowfullscreen></iframe>
 
     <!-- ============================================================================================================================================================= -->
-    <header id="head">
-        <div id="Laforant-bar-warapper">
-            <div id="Laforant-Bar">
-                <!-- menu bagian kiri -->
-                <div id="LaforantBar-left-menu" class="LaforantBar-left-menu">
-                    <div id="LaforantBar-left-menu-logo">
-                        <span style="display: inline-block;">
-                            <a class="Laforant-logo" href="/index.html">
-                                <span class="Logo">
-                                    <img class="imgs" src="style/asset/logo_army-2_1fix.png">
-                                </span>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <!-- pembatas -->
-                <span class="LaforantBar-left-menu-separator"></span>
-                <!-- content nav bar -->
-                <div id="Nav-Bar" class="Nav-Bar">
-                    <div id="Laforant-Nav-Bar">
-
-                        <!-- untuk widh 1024 atau diperkecil -->
-                        <a href="index.html" class="logos">Laforant</a>
-                        <!-- --------------- -->
-
-                        <div id="nav-menu" class="nav-menu game-home">
-                            <a class="active Home main" >Game</a>
-                        </div>
-                        <i class="fas fa-caret-down"></i>
-                        
-                        <!-- submenu menggunakan css seharunya tapi karena sudah terlanjur submenu bukan si sibling dari game-home 
-                        dan submenu berada di luar maka digunakan js sebagai seakan akan hover submenu  / sumenu.js karena #Laforant-Bar .Nav-Bar
-                        di overflow hidden agar tulisan jika diperkecil tidak ofsite dan jika menggunakan hidden maka jika dihover si submenu akan ke hidden,
-                        jadi submenu diluar dari navbar dan dicontrol lewat js dan seharusnya paling sering digunakan yaitu Nav ul li  -->
-                        <!-- 
-                            <div id="nav-menu" class="nav-menu game-home">
-                                <a class="active Home main" >Game</a>
-                                <div class="submenu" id="submenu" style="display: block;"> 
-                                    <a class="sb-menu sb-menu1 spslect">Home</a>
-                                    <a href="#second-content" class="sb-menu sb-menu2 select">Priview Games</a>
-                                    <a href="#tri-content" class="sb-menu sb-menu3 select" >Priview Agents</a>
-                                    <a href="#forth-content" class="sb-menu sb-menu4 select">Priview Maps</a>
-                                </div> 
-                            </div> 
-                         -->
-                         
-                        <div id="nav-menu" class="nav-menu cek">
-                            <a class="main" href="maps.html" class="Maps">Maps</a>
-                        </div>
-
-                        <div id="nav-menu" class="nav-menu cek">
-                            <a class="main" href="agents.html" class="Agents">Agents</a>
-                        </div>
-
-                        <div id="nav-menu" class="nav-menu cek">
-                            <a class="main" href="system_req.html" class="System-Requirements">System Requirements</a>
-                        </div>
-
-                        <div id="nav-menu" class="nav-menu cek">
-                            <a class="main" href="login.html" class="Pre-Register">Pre-Register</a>
-                        </div>
-
-                        <div id="nav-menu" class="nav-menu cek">
-                            <a class="main" href="score.html" class="score-board">score board</a>
-                        </div>
-                        
-                    </div>
-                </div>
-                <!-- Laforant-Bar submenu -->
-                <!-- spselect and select for scrollsmooth in js-->
-                <div class="submenu" id="submenu">
-                    <a class="sb-menu sb-menu1 spslect">Home</a>
-                    <a href="#second-content" class="sb-menu sb-menu2 select">Priview Games</a>
-                    <a href="#tri-content" class="sb-menu sb-menu3 select" >Priview Agents</a>
-                    <a href="#forth-content" class="sb-menu sb-menu4 select">Priview Maps</a>
-                </div> 
-
-                <!-- pembatas-->
-                <span class="LaforantBar-left-menu-separator-2"></span>
-                <!-- menu bagian kiri -->
-                <div id="LaforantBar-right-menu" class="LaforantBar-right-menu">
-                    <div id="download-game">
-                        <a href="#" class="game button" > Download Now </a>
-                    </div>
-                </div>
-                <div id="menu-checkbar-hamburger" class="menu-checkbar-hamburger">
-                    <div class="line line-1"></div>
-                    <div class="line line-2"></div>
-                    <div class="line line-3"></div>
-                </div>
-            </div>
-        </div>
-        <!-- responsive hidden menu -->
-        <div id="hidden-box" class="hidden-box" >
-            <div id="nav-menu" class="nav-menu">
-                <a href="index.html" class="Home">Home</a>
-            </div>
-
-            <div id="nav-menu" class="nav-menu">
-                <a href="maps.html" class="Maps">Maps</a>
-            </div>
-
-            <div id="nav-menu" class="nav-menu">
-                <a href="agents.html" class="Agents">Agents</a>
-            </div>
-
-            <div id="nav-menu" class="nav-menu">
-                <a href="system_req.html" class="System-Requirements">System Requirements</a>
-            </div>
-
-            <div id="nav-menu" class="nav-menu">
-                <a href="login.html" class="Pre-Register">Pre-Register</a>
-            </div>
-
-            <div id="nav-menu" class="nav-menu">
-                <a href="score.html" class="score-board">score board</a>
-            </div>
-        </div>
-        <!-- --------------------------- -->
-    </header>
+    <!-- header -->
+    <?php 
+    
+        include_once("headerforindex.php"); 
+    
+    ?>
 
     <!-- content -->
     <div id="backdrop"></div>
@@ -554,7 +441,7 @@
                                  <div class="wrap">
                                      <!-- before for wrap-->
                                     <div class="button">
-                                        <a href="agents.html">
+                                        <a href="agents.php">
                                             <div class="slide"></div>
                                             <span class="tex">Read More</span>
                                             <div class="slide2"></div>
@@ -597,7 +484,7 @@
                          <div class="wrap">
                              <!-- before for wrap-->
                             <div class="button">
-                                <a href="maps.html">
+                                <a href="maps.php">
                                     <div class="slide"></div>
                                     <span class="tex">Read More</span>
                                     <div class="slide2"></div>
@@ -610,118 +497,21 @@
             </div>
 
     </section>
+
     <!-- footer -->
-    <section class="footer">
-        <div class="rec">
-            <div class="left">
-                <div class="media">
-                    <!-- facebook -->
-                    <div class="wrap">
-                        <a class="wrap" href="https://www.facebook.com/">
-                            <i href="" class="fab fa-facebook-square"></i> 
-                        </a>
-                    </div>
-                    <!-- instagram -->
-                    <div class="wrap">
-                        <a class="wrap cs" href="https://www.instagram.com/">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                    <!-- twitch -->
-                    <div class="wrap">
-                        <a class="wrap" href="https://www.twitch.tv/">
-                            <i class="fab fa-twitch"></i>
-                        </a>
-                    </div>
-                    <!-- twitter -->
-                    <div class="wrap">
-                        <a class="wrap" href="https://twitter.com/?lang=en">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                    <!-- youtube -->
-                    <div class="wrap">
-                        <a class="wrap" href="https://www.youtube.com/">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <!-- snapchat -->
-                    <div class="wrap">
-                        <a class="wrap sn" href="https://www.snapchat.com/">
-                            <i class="fab fa-snapchat-ghost"></i>
-                        </a>
-                    </div>
-                    <!-- linkedin -->
-                    <div class="wrap">
-                        <a class="wrap" href="https://www.linkedin.com/">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <p class="copyright">
-                    &copy; 2021 , Spectacular Games, Inc. Spectacular, Spectacular Games, the Spectacular Games logo, Laforant, the Laforant logo, Unreal, Unreal Engine 4 and UE4 are 
-                    trademarks or registered trademarks of Spectacular Games, Inc. in the Jakarta of Indonesia and elsewhere. All rights reserved.  
-                </p>
-
-                <div class="privacy">
-                    <div class="Term">
-                        <a class="Term" href="https://policies.google.com/terms?hl=en-US">Terms of Service</a>
-                    </div>
-
-                    <div class="policy">
-                        <a class="policy" href="https://policies.google.com/privacy?hl=en-US">Privacy Policy</a>
-                    </div>
-                </div>
-            </div>
-            <div class="right">
-                <div class="bactoup">
-                    <i class="fas fa-arrow-circle-up"></i>
-                </div>
-
-                <div class="platform">
-                    <a class="plaformss mar-left">
-                        <i class="fab fa-steam"></i>
-                    </a>
-
-                    <a class="plaformss">
-                        <i class="fab fa-xbox"></i>
-                    </a>
-
-                    <a class="plaformss">
-                        <i class="fas fa-gamepad"></i>
-                    </a>
-                    
-                    <a class="plaformss">
-                        <i class="fab fa-playstation"></i>
-                    </a>
-
-                    <a class="plaformss">
-                        <i class="fab fa-unity"></i>
-                    </a>
-
-                    <a class="plaformss">
-                        <i class="fab fa-android"></i>
-                    </a>
-
-                    <a class="plaformss">
-                        <i class="fas fa-desktop"></i>
-                    </a>
-                    
-                </div>
-            </div>
-        </div>
-    </section> 
+    
     <!-- ----------------------------------------------------- -->
     <!-- <div class="load">
         <div class="loader">Loading...</div>
     </div> -->
+    <?php 
+        include_once("footers.php")
+    ?>
     
     <!-- script -->
     <script src="manage-system/responsive.js"></script>
     <script src="manage-system/scroll.js"></script>
     <script src="manage-system/video-control.js"></script>
-    <script src="manage-system/submenu.js"></script>
     <script src="manage-system/smoot_scrool.js"></script>
     <script src="manage-system/loading.js"></script>
 </body>

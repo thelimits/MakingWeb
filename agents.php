@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='style/asset/Omen_artwork.svg' rel='shortcut icon'>
     <!-- link for font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -13,111 +15,16 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/agengts.css">
     <link rel="stylesheet" href="style/style2.css">
-    <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/res-Home.css">
     <title>agents</title>
 </head>
+
 <body>
-    <header>
-        <div id="Laforant-bar-warapper">
-            <div id="Laforant-Bar">
-                <!-- menu bagian kiri -->
-                <div id="LaforantBar-left-menu" class="LaforantBar-left-menu">
-                    <div id="LaforantBar-left-menu-logo">
-                        <span style="display: inline-block;">
-                            <a class="Laforant-logo" href="/index.html">
-                                <span class="Logo">
-                                    <img class="imgs" src="style/asset/logo_army-2_1fix.png">
-                                </span>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <!-- pembatas -->
-                <span class="LaforantBar-left-menu-separator"></span>
-                <!-- content nav bar -->
-                <div id="Nav-Bar" class="Nav-Bar">
-                    <div id="Laforant-Nav-Bar">
-
-                        <!-- untuk widh 1024 atau diperkecil -->
-                        <a href="#" class="logos">Laforant</a>
-                        <!-- --------------- -->
-
-                        <div id="nav-menu" class="nav-menu">
-                            <a class="main" href="index.html" style="cursor: pointer;">Home</a>
-                        </div>
-
-                        <div id="nav-menu" class="nav-menu">
-                            <a class="main" href="maps.html" class="Maps">Maps</a>
-                        </div>
-
-                        <div id="nav-menu" class="nav-menu">
-                            <a class="main" href="agents.html" class="Agents">Agents</a>
-                        </div>
-
-                        <div id="nav-menu" class="nav-menu">
-                            <a class="main" href="system_req.html" class="System-Requirements">System Requirements</a>
-                        </div>
-
-                        <div id="nav-menu" class="nav-menu">
-                            <a class="main" href="login.html" class="Pre-Register">Pre-Register</a>
-                        </div>
-
-                        <div id="nav-menu" class="nav-menu">
-                            <a class="main" href="score.html" class="score-board">score board</a>
-                        </div>
-                    </div>
-                </div>
-                <!--Laforant-Bar submenu -->
-                <div class="submenu" id="submenu">
-                    <a href="#content" class="sb-menu">Home</a>
-                    <a href="#second-content" class="sb-menu">About Games</a>
-                </div> 
-
-                <!-- pembatas-->
-                <span class="LaforantBar-left-menu-separator-2"></span>
-                <!-- menu bagian kiri -->
-                <div id="LaforantBar-right-menu" class="LaforantBar-right-menu">
-                    <div id="download-game">
-                        <a href="#" class="game button" > Download Now </a>
-                    </div>
-                </div>
-                <div id="menu-checkbar-hamburger" class="menu-checkbar-hamburger">
-                    <div class="line line-1"></div>
-                    <div class="line line-2"></div>
-                    <div class="line line-3"></div>
-                </div>
-            </div>
-        </div>
-        <!-- responsive hidden menu -->
-        <div id="hidden-box" class="hidden-box" >
-            <div id="nav-menu" class="nav-menu">
-                <a href="index.html" class="Home">Home</a>
-            </div>
-
-            <div id="nav-menu" class="nav-menu">
-                <a href="maps.html" class="Maps">Maps</a>
-            </div>
-
-            <div id="nav-menu" class="nav-menu">
-                <a href="agents.html" class="Agents">Agents</a>
-            </div>
-
-            <div id="nav-menu" class="nav-menu">
-                <a href="system_req.html" class="System-Requirements">System Requirements</a>
-            </div>
-
-            <div id="nav-menu" class="nav-menu">
-                <a href="login.html" class="Pre-Register">Pre-Register</a>
-            </div>
-
-            <div id="nav-menu" class="nav-menu">
-                <a href="score.html" class="score-board">score board</a>
-            </div>
-        </div>
-        <!-- --------------------------- -->
-    </header>
-
+   <!-- header -->
+    <?php 
+        include_once("header.php") 
+    ?>
+    <!-- ============= -->
     <section class="content-baground">
         <div class="selected">
             <div class="menu prev"><i class="fas fa-chevron-left"></i></div>
@@ -335,107 +242,11 @@
             <div class="Item ch-15"><span>bramsteel <span class="no">15</span></span></div>
         </div>
     </section>
-    <section class="footer">
-        <div class="rec">
-            <div class="left">
-                <div class="media">
-                    <!-- facebook -->
-                    <div class="wraps">
-                        <a class="wraps" href="https://www.facebook.com/">
-                            <i href="" class="fab fa-facebook-square"></i> 
-                        </a>
-                    </div>
-                    <!-- instagram -->
-                    <div class="wraps">
-                        <a class="wraps cs" href="https://www.instagram.com/">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                    <!-- twitch -->
-                    <div class="wraps">
-                        <a class="wraps" href="https://www.twitch.tv/">
-                            <i class="fab fa-twitch"></i>
-                        </a>
-                    </div>
-                    <!-- twitter -->
-                    <div class="wraps">
-                        <a class="wraps" href="https://twitter.com/?lang=en">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                    <!-- youtube -->
-                    <div class="wraps">
-                        <a class="wraps" href="https://www.youtube.com/">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <!-- snapchat -->
-                    <div class="wraps">
-                        <a class="wraps sn" href="https://www.snapchat.com/">
-                            <i class="fab fa-snapchat-ghost"></i>
-                        </a>
-                    </div>
-                    <!-- linkedin -->
-                    <div class="wraps">
-                        <a class="wraps" href="https://www.linkedin.com/">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
 
-                <p class="copyright">
-                    &copy; 2021 , Spectacular Games, Inc. Spectacular, Spectacular Games, the Spectacular Games logo, Laforant, the Laforant logo, Unreal, Unreal Engine 4 and UE4 are 
-                    trademarks or registered trademarks of Spectacular Games, Inc. in the Jakarta of Indonesia and elsewhere. All rights reserved.  
-                </p>
-
-                <div class="privacy">
-                    <div class="Term">
-                        <a class="Term" href="https://policies.google.com/terms?hl=en-US">Terms of Service</a>
-                    </div>
-
-                    <div class="policy">
-                        <a class="policy" href="https://policies.google.com/privacy?hl=en-US">Privacy Policy</a>
-                    </div>
-                </div>
-            </div>
-            <div class="right">
-                <div class="bactoup">
-                    <i class="fas fa-arrow-circle-up"></i>
-                </div>
-
-                <div class="platform">
-                    <a class="plaformss mar-left">
-                        <i class="fab fa-steam"></i>
-                    </a>
-
-                    <a class="plaformss">
-                        <i class="fab fa-xbox"></i>
-                    </a>
-
-                    <a class="plaformss">
-                        <i class="fas fa-gamepad"></i>
-                    </a>
-                    
-                    <a class="plaformss">
-                        <i class="fab fa-playstation"></i>
-                    </a>
-
-                    <a class="plaformss">
-                        <i class="fab fa-unity"></i>
-                    </a>
-
-                    <a class="plaformss">
-                        <i class="fab fa-android"></i>
-                    </a>
-
-                    <a class="plaformss">
-                        <i class="fas fa-desktop"></i>
-                    </a>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- footer -->
+    <?php 
+        include_once("footers.php")
+    ?>
 
     <script src="manage-system/responsive.js"></script>
     <script src="manage-system/sliding.js"></script>

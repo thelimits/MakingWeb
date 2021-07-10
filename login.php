@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='style/asset/Omen_artwork.svg' rel='shortcut icon'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
@@ -48,7 +49,7 @@
                 
                 <input type="checkbox" class="check-box" id="check-box" ><label for="check-box"><span style="color:#BF953F ;">Remember Me</span></label>
                 <button type="submit" class="submit-buttons" id="submit-buttons submit-buttonslogin">Log In</button>
-                <a class="back" href="index.html">BACK</a>
+                <a class="back" href="index.php">BACK</a>
             </form>
 
             <form id="Registered-form" class="input-form">
@@ -99,7 +100,7 @@
                 <input type="checkbox" class="check-box" id="checkbox-terms" ><label for="checkbox-terms"><span class="ckc-bx" >  I agree to the <a class="aggremet" href="#">terms</a> & <a class="aggremet" href="#">conditions</a> </span></label>
                 <button type="submit" class="regis-buttons" id="regis-buttons" >Register</button>
 
-                <a class="back" href="index.html">BACK</a>
+                <a class="back" href="index.php">BACK</a>
                 
             </form>
        </div>
